@@ -18,4 +18,20 @@ export LESS_TERMCAP_md="${yellow}";
 export MANPAGER='less -X';
 
 # Always enable colored `grep` output.
-export GREP_OPTIONS='--color=auto';
+export GREP_OPTIONS='--color=auto'
+
+# Java and Maven
+export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
+export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
+ 
+alias java6='export JAVA_HOME=$JAVA_6_HOME'
+alias java7='export JAVA_HOME=$JAVA_7_HOME'
+ 
+#default java7
+export JAVA_HOME=$JAVA_7_HOME
+
+#maven
+#export M2_HOME='/usr/local/Cellar/maven/3.2.5';
+#export M2='$M2_HOME/bin';
+export MAVEN_OPTS='-Xmx512m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC';
+
