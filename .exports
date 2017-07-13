@@ -37,13 +37,13 @@ export GPG_TTY=$(tty);
 export GREP_OPTIONS='--color=auto'
 
 # Java and Maven
-export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
-export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+#export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
+#export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 
-alias java8='export JAVA_HOME=$JAVA_8_HOME'
-alias java7='export JAVA_HOME=$JAVA_7_HOME'
+#alias java8='export JAVA_HOME=$JAVA_8_HOME'
+#alias java7='export JAVA_HOME=$JAVA_7_HOME'
 
 #default java7
-export JAVA_HOME=$JAVA_8_HOME
+#export JAVA_HOME=$JAVA_8_HOME
 
 export MAVEN_OPTS='-Xmx1024m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC'
