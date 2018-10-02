@@ -83,6 +83,7 @@ brew install ack
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
+brew install jq
 brew install lua
 brew install lynx
 brew install p7zip
@@ -95,12 +96,17 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+# AWS CLI
+brew install awscli
+
+
 # Casks
 brew tap caskroom/cask
 brew tap caskroom/versions
 
 brew cask install google-chrome
 brew cask install atom
+brew cask install iterm2
 brew cask install java
 brew cask install intellij-idea
 
