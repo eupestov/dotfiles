@@ -49,3 +49,8 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # Add completion for AWS CLI
 complete -C '/usr/local/bin/aws_completer' aws
+
+# Enable tab completion for 'k'
+if type __start_kubectl &> /dev/null && [ -f /usr/local/etc/bash_completion.d/kubectl ]; then
+	complete -o default -F __start_kubectl k;
+fi;

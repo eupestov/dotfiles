@@ -82,6 +82,7 @@ brew install ack
 #brew install exiv2
 brew install git
 brew install git-lfs
+brew install httpie
 brew install imagemagick --with-webp
 brew install jq
 brew install lua
@@ -99,6 +100,10 @@ brew install zopfli
 # AWS CLI
 brew install awscli
 
+# K8s
+brew install kubectl
+brew install kubectx
+brew install kubernetes-helm
 
 # Casks
 brew tap caskroom/cask
